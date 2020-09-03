@@ -27,9 +27,11 @@ class Player {
   roll() {
     let roll = Math.ceil(Math.random() * 6);
     if (roll > 1) {
+      alert(roll)
       this.rollAmount += roll;
     } else {
       this.rollAmount = 0;
+      alert('1 next player')
       this.hold(pigDice);
     }
     return this.rollAmount
