@@ -4,39 +4,13 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-3.5.1.js"></script>
-    <script src="js/Brycenscripts.js"></script>
+    <script src="js/scripts.js"></script>
 
     <title>Pig Dice</title>
   </head>
   <body>
-    <!-- <div class="container">
-      <form id="playerNames">
-        <div class="form-group row">
-          <input id="player1Name" class="form-control" type="text" />
-          <label for="player1Name">Please enter Player 1 Name</label>
-        </div>
-        <div class="form-group row">
-          <input id="player2Name" class="form-control" type="text" />
-          <label for="player2Name">Please enter Player 2 Name</label>
-        </div>
-        <button type="submit" class="btn btn-outline-danger">start!</button>
-      </form>
-
-      <form id="rollOrHold">
-        <p>Hello!</p>
-        <div><span class="name1"></span> <span id="scorePlayer1"></span></div>
-        <div><span class="name2"></span> <span id="scorePlayer2"></span></div>
-        <button type="button" class="btn btn-outline-success" id="roll">
-          roll
-        </button>
-        <button type="button" class="btn btn-outline-danger" id="hold">
-          Hold
-        </button>
-      </form>
-    </div> -->
     <div class="container">
       <form id="playerNames">
-        <!-- hide when submit -->
         <div class="form-group row">
           <input id="player1Name" class="form-control" type="text" />
           <label for="player1Name">Please enter Player 1 Name</label>
@@ -47,9 +21,7 @@
         </div>
         <button type="submit" class="btn btn-outline-danger">start!</button>
       </form>
-
-      <form id="rollOrHold">
-        <!-- show when submit #player names -->
+      <div id="rollOrHold">
         <p>Players Ready!</p>
         <p>
           Hello <span class="name1"></span>! Your score is:
@@ -63,12 +35,11 @@
         <p><span id="rollAmount2"></span></p>
         <button type="button" class="btn btn-outline-success" id="roll">
           roll
-          <!-- change back from 'submit' type Roll  -->
         </button>
         <button type="button" class="btn btn-outline-danger" id="hold">
           Hold
         </button>
-      </form>
+      </div>
     </div>
   </body>
 </html>
